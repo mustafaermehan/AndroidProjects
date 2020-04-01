@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/resultText"
+            android:layout_width="162dp"
+            android:layout_height="72dp"
+            android:text="Result : 0"
+            tools:layout_editor_absoluteX="165dp"
+            tools:layout_editor_absoluteY="418dp" />
+
+        <EditText
+            android:id="@+id/number1Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Enter number"
+            tools:layout_editor_absoluteX="82dp"
+            tools:layout_editor_absoluteY="67dp" />
+
+        <EditText
+            android:id="@+id/number2Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Enter number 2"
+            tools:layout_editor_absoluteX="83dp"
+            tools:layout_editor_absoluteY="157dp" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="409dp"
+            android:layout_height="69dp"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="203dp">
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="66dp"
+                android:layout_height="41dp"
+                android:onClick="sum"
+                android:text="+" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="62dp"
+                android:layout_height="48dp"
+                android:onClick="sub"
+                android:text="-" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="62dp"
+                android:layout_height="48dp"
+                android:onClick="multip"
+                android:text="x" />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="62dp"
+                android:layout_height="48dp"
+                android:onClick="div"
+                android:text="/" />
+        </LinearLayout>
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>
